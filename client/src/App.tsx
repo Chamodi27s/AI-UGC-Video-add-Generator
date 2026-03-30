@@ -8,6 +8,7 @@ import Generator from './pages/Generator';
 import Plans from './pages/Plans';
 import Community from './pages/Community';
 import Result from './pages/Result';
+import Loading from './pages/Loading';
 
 function App() {
 	return (
@@ -17,10 +18,12 @@ function App() {
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/generator" element={<Generator />} />
+				<Route path="/generate" element={<Generator />} />
 				<Route path='/result/:projectId' element={<Result />} />
 				<Route path="/plans" element={<Plans />} />
 				<Route path="/community" element={<Community />} />
+				<Route path="/plans" element={<Plans />} />
+				<Route path="/loading" element={<Loading />} />
 				
 			</Routes>
 			
